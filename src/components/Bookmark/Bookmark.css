@@ -1,0 +1,13 @@
+.bookmarksParent {
+  position: fixed;
+  top: 24px;
+  left: 43px;
+}
+
+.bookmarkContainer {
+  width: 300px;
+  border-radius: 28px;
+  
+  display: flex;
+  flex-direction: column;
+}

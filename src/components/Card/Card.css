@@ -25,8 +25,25 @@
 .author {
   padding: 5px 0px 20px 20px;
   color: #52525b;
+
+  display: flex;
+  width: 93%;
+  justify-content: space-between;
 }
 .mainImg img {
   border-radius: 18px;
   /* max-width: 500px; */
+}
+.bookmarkButton {
+  height: 20px;
+  width:120px;
+  padding: 3px;
+  background-color: #1f2937;
+  border-radius: 20px;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
 }
