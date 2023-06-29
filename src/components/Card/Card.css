@@ -1,0 +1,32 @@
+.card {
+  height: 600px;
+  width: 500px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 5%;
+  border-radius: 18px;
+  font-family: "Open sans", sans-serif;
+}
+
+.title {
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+}
+.description {
+  text-align: left;
+  padding: 28px 15px 25px 20px;
+}
+.mainImg {
+  padding: 5px 0px 0px 20px;
+}
+.author {
+  padding: 5px 0px 20px 20px;
+  color: #52525b;
+}
+.mainImg img {
+  border-radius: 18px;
+  /* max-width: 500px; */
+}
