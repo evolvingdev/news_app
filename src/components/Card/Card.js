@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import "./Card.css";
 import AddIcon from "@mui/icons-material/Add";
 import DoneIcon from "@mui/icons-material/Done";
-import Bookmark from "../Bookmark/Bookmark";
 
 function Card(props) {
-  const [bookmarkItems, setBookmarkItems] = useState([]);
   const [isBookmarked, setIsBookmarked] = useState(false);
-  console.log(bookmarkItems);
   return (
     <>
       {/* <a
