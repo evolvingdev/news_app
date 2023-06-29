@@ -87,6 +87,13 @@ function Feed() {
                 <b>Yay! You have seen it all</b>
               </p>
             }
+            style={{
+              width: "99vw",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
           >
             {paginatedFeed !== null ? (
               paginatedFeed.map((item, idx) => {
