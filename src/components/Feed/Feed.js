@@ -22,7 +22,7 @@ function Feed() {
         setSpinner(false);
         setPaginatedFeed([
           ...paginatedFeed,
-          ...response.data.articles.slice(startIndex, endIndex),
+          ...response.data.articles.slice(startIndex, startIndex+10),
         ]);
       })
       .catch(function (error) {
@@ -34,9 +34,9 @@ function Feed() {
       });
   }, [startIndex]);
 
+// eslint-disable-next-line no-use-before-define
   const populatePaginatedFeed = () => {
     setStartIndex(startIndex + 10);
-    setEndIndex(endIndex + 10);
   };
 
   return (

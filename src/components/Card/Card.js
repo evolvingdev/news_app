@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Card.css";
-import AddIcon from "@mui/icons-material/Add";
-import DoneIcon from "@mui/icons-material/Done";
+// import AddIcon from "@mui/icons-material/Add";
+// import DoneIcon from "@mui/icons-material/Done";
 
 function Card(props) {
-  const [isBookmarked, setIsBookmarked] = useState(false);
-  const [bookmarkItems, setBookmarkItems] = useState([])
+  // const [isBookmarked, setIsBookmarked] = useState(false);
+  // const [bookmarkItems, setBookmarkItems] = useState([])
   return (
     <>
       {/* <a
