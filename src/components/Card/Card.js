@@ -5,6 +5,7 @@ import DoneIcon from "@mui/icons-material/Done";
 
 function Card(props) {
   const [isBookmarked, setIsBookmarked] = useState(false);
+  const [bookmarkItems, setBookmarkItems] = useState([])
   return (
     <>
       {/* <a
@@ -17,16 +18,17 @@ function Card(props) {
         <div className="author">
           {" "}
           <span>By {props.news.author}</span>{" "}
-          <div
+          {/* <div
             className="bookmarkButton"
             onClick={() => {
               // setBookmarkItems([...bookmarkItems, props.news ]);
+              localStorage.setItem("bookmarks", [...localStorage.getItem("bookmarks"), props.news] )
               isBookmarked ? setIsBookmarked(false) : setIsBookmarked(true);
             }}
           >
             {isBookmarked ? <DoneIcon /> : <AddIcon />}
             {isBookmarked ? "Added" : "Bookmark"}
-          </div>
+          </div> */}
         </div>
         <div className="mainImg">
           <img src={props.news.urlToImage} width="560px" height="auto" alt="" />

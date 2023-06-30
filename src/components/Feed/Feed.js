@@ -4,7 +4,6 @@ import Card from "../Card/Card";
 import "./Feed.css";
 import { Rings, ColorRing } from "react-loader-spinner";
 import InfiniteScroll from "react-infinite-scroll-component";
-import Bookmark from "../Bookmark/Bookmark";
 
 function Feed() {
   const [spinner, setSpinner] = useState(true);
@@ -68,7 +67,6 @@ function Feed() {
           </>
         ) : (
           <>
-              <Bookmark />
             <InfiniteScroll
               dataLength={paginatedFeed.length} //This is important field to render the next data
               next={populatePaginatedFeed}
